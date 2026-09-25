@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NeighbourDev — Small apps for the everyday</title>
+<meta name="description" content="Apps and games by P R Abinayaa — one self-taught developer building small, useful things for everyday life. Dream Villa keeps every house you own in one file; Tilt Ball is a pocket physics puzzle. More on the way.">
+<meta name="theme-color" content="#1f7a63">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/icon.svg">
+<link rel="canonical" href="https://neighbourdev.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NeighbourDev">
+<meta property="og:url" content="https://neighbourdev.com/">
+<meta property="og:title" content="NeighbourDev — Small apps for the everyday">
+<meta property="og:description" content="Apps and games by P R Abinayaa — one self-taught developer building small, useful things for everyday life. Dream Villa keeps every house you own in one file; Tilt Ball is a pocket physics puzzle. More on the way.">
+<meta property="og:image" content="https://neighbourdev.com/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/styles.css?v=3">
+
+<script>
+  /* Theme choice is a per-viewer convenience; storage can throw in private mode. */
+  try {
+    var t = localStorage.getItem('nd-theme');
+    if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NeighbourDev",
+  "url": "https://neighbourdev.com/",
+  "description": "One developer building small, useful apps and games for everyday life.",
+  "founder": { "@type": "Person", "name": "P R Abinayaa" },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "MobileApplication", "name": "Dream Villa: House Manager", "applicationCategory": "Productivity", "operatingSystem": "iOS", "url": "https://apps.apple.com/us/app/dream-villa-house-manager/id6763935516" } },
+    { "@type": "Offer", "itemOffered": { "@type": "MobileApplication", "name": "Tilt Ball", "applicationCategory": "Game", "operatingSystem": "iOS", "url": "https://apps.apple.com/us/app/tilt-ball-maze-labyrinth/id6814348135" } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true">
+        <rect width="64" height="64" rx="15" fill="#1f7a63"/>
+        <path d="M20 31 12 38v14h13V41h6v11h13V38l-8-7z" fill="#ffffff" fill-opacity=".92"/>
+        <path d="M44 26 33 16 22 26" fill="none" stroke="#ffd79a" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="wordmark">Neighbour<b>Dev</b></span>
+    </a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="apps.html" class="is-key">Apps</a>
+      <a href="games.html" class="is-key">Games</a>
+      <a href="index.html#next">Next up</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch between light and dark">
+      <svg class="sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8.2 8.2 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ───────────────────────── Hero ───────────────────────── -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/></svg>
+        Independent · iOS &amp; Android
+      </span>
+
+      <h1>Small apps for the everyday, built by the <em>developer next door</em>.</h1>
+
+      <p class="lede">
+        NeighbourDev is one person writing software for the ordinary things —
+        the house you are building, the ten minutes you are waiting. Two are out,
+        more are on the bench. No accounts to make, and your records stay on your phone.
+      </p>
+
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="apps.html">
+          Browse the apps
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="games.html">Or the games</a>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat"><b>1</b><span>developer</span></div>
+        <div class="stat"><b>2</b><span>shipped so far</span></div>
+        <div class="stat"><b>0</b><span>accounts required</span></div>
+        <div class="stat"><b>100%</b><span>works offline</span></div>
+      </div>
+    </div>
+
+    <!-- The street: two houses with the lights on, one still going up. -->
+    <div class="street">
+      <svg viewBox="0 0 520 360" role="img" aria-label="An illustrated street: two finished houses and one under construction">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="var(--sky-1)"/>
+            <stop offset="1" stop-color="var(--sky-2)"/>
+          </linearGradient>
+          <linearGradient id="dvroof" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e0703f"/><stop offset="1" stop-color="#b84a20"/>
+          </linearGradient>
+          <linearGradient id="tbroof" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#6badf7"/><stop offset="1" stop-color="#2e6bd9"/>
+          </linearGradient>
+        </defs>
+
+        <rect width="520" height="360" rx="20" fill="url(#sky)"/>
+
+        <!-- distant trees -->
+        <g fill="var(--grass)" opacity=".85">
+          <circle cx="60" cy="214" r="26"/><circle cx="92" cy="220" r="20"/>
+          <circle cx="462" cy="216" r="24"/><circle cx="434" cy="222" r="18"/>
+        </g>
+
+        <!-- ground -->
+        <path d="M0 236h520v104a20 20 0 0 1-20 20H20a20 20 0 0 1-20-20z" fill="var(--grass)"/>
+        <path d="M0 268h520v44H0z" fill="var(--canvas-2)"/>
+        <g stroke="var(--hairline-strong)" stroke-width="3" stroke-dasharray="16 14" opacity=".7">
+          <path d="M0 290h520"/>
+        </g>
+
+        <!-- house 1 — Dream Villa -->
+        <g>
+          <rect x="52" y="168" width="126" height="68" rx="6" fill="var(--surface)" stroke="var(--hairline-strong)"/>
+          <path d="M115 122l72 52H43z" fill="url(#dvroof)"/>
+          <rect x="70" y="186" width="26" height="22" rx="4" fill="#ffd79a"/>
+          <rect x="106" y="186" width="26" height="22" rx="4" fill="#ffd79a"/>
+          <rect x="142" y="192" width="24" height="44" rx="4" fill="var(--canvas-2)" stroke="var(--hairline-strong)"/>
+          <circle cx="148" cy="214" r="2.4" fill="var(--ink-faint)"/>
+        </g>
+
+        <!-- house 2 — Tilt Ball -->
+        <g>
+          <rect x="212" y="182" width="112" height="54" rx="6" fill="var(--surface)" stroke="var(--hairline-strong)"/>
+          <path d="M268 142l62 46H206z" fill="url(#tbroof)"/>
+          <rect x="228" y="196" width="24" height="20" rx="4" fill="#ffd79a"/>
+          <rect x="262" y="196" width="24" height="20" rx="4" fill="#ffd79a"/>
+          <rect x="296" y="200" width="18" height="36" rx="4" fill="var(--canvas-2)" stroke="var(--hairline-strong)"/>
+          <circle cx="268" cy="163" r="9" fill="#f2f5fb" stroke="var(--hairline-strong)"/>
+          <circle cx="265" cy="160" r="3" fill="#fff"/>
+        </g>
+
+        <!-- house 3 — under construction -->
+        <g opacity=".95">
+          <rect x="356" y="190" width="108" height="46" rx="6" fill="none" stroke="var(--hairline-strong)" stroke-dasharray="7 6"/>
+          <path d="M410 156l58 42H352z" fill="none" stroke="var(--hairline-strong)" stroke-width="2.4" stroke-dasharray="7 6"/>
+          <g stroke="var(--amber)" stroke-width="4" stroke-linecap="round">
+            <path d="M348 236V176M472 236V176M348 200h124M348 218h124"/>
+          </g>
+        </g>
+
+        <!-- lamp post -->
+        <g stroke="var(--ink-soft)" stroke-width="4" stroke-linecap="round" fill="none">
+          <path d="M196 290v-72M196 218h16"/>
+        </g>
+        <circle cx="214" cy="224" r="7" fill="#ffd79a"/>
+      </svg>
+      <p class="street-caption"><span class="dot" aria-hidden="true"></span> Two with the lights on, one still going up.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────────────────── Two doors ───────────────────────── -->
+<section class="section" id="shelf">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Out now</span>
+      <h2>Two doors on the street</h2>
+      <p>One side is for getting things done, the other is for putting the day down. They are built the same way and live in different rooms.</p>
+    </div>
+
+    <div class="doors reveal">
+
+      <a class="door" href="apps.html" style="--accent: var(--dv); --accent-soft: var(--dv-soft);">
+        <div class="door-art">
+          <svg viewBox="0 0 260 180" role="img" aria-label="Apps">
+            <rect x="26" y="36" width="94" height="112" rx="16" fill="var(--surface)" stroke="var(--hairline-strong)"/>
+            <rect x="40" y="52" width="66" height="10" rx="5" fill="var(--dv)" opacity=".85"/>
+            <rect x="40" y="70" width="46" height="8" rx="4" fill="var(--ink-faint)" opacity=".6"/>
+            <rect x="40" y="92" width="66" height="7" rx="3.5" fill="var(--canvas-2)"/>
+            <rect x="40" y="92" width="44" height="7" rx="3.5" fill="var(--dv)"/>
+            <rect x="40" y="110" width="66" height="7" rx="3.5" fill="var(--canvas-2)"/>
+            <rect x="40" y="110" width="28" height="7" rx="3.5" fill="var(--dv)" opacity=".6"/>
+            <path d="M176 58l34 26v52a4 4 0 0 1-4 4h-18v-30h-24v30h-18a4 4 0 0 1-4-4V84z" fill="var(--dv)" opacity=".92"/>
+            <path d="M136 84l40-31 40 31" fill="none" stroke="var(--dv)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="door-body">
+          <span class="app-kicker">1 out · 1 in the workshop</span>
+          <h3>Apps</h3>
+          <p>Tools for the things you only build once — and then live with for twenty years. Dream Villa is the first.</p>
+          <span class="door-more">
+            See the apps
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+
+      <a class="door" href="games.html" style="--accent: var(--tb); --accent-soft: var(--tb-soft);">
+        <div class="door-art">
+          <svg viewBox="0 0 260 180" role="img" aria-label="Games">
+            <rect x="70" y="18" width="130" height="144" rx="22" fill="var(--surface)" stroke="var(--hairline-strong)" stroke-width="5"/>
+            <g fill="var(--hairline)">
+              <rect x="92" y="54" width="66" height="10" rx="5"/>
+              <rect x="126" y="86" width="10" height="54" rx="5"/>
+            </g>
+            <path d="M104 92l3.6 7.3 8.1 1.2-5.9 5.7 1.4 8-7.2-3.8-7.2 3.8 1.4-8-5.9-5.7 8.1-1.2z" fill="var(--tb-gold)"/>
+            <circle cx="170" cy="128" r="13" fill="#12351f"/>
+            <circle cx="170" cy="128" r="13" fill="none" stroke="#36d47a" stroke-width="3" stroke-opacity=".7"/>
+            <circle cx="106" cy="44" r="12" fill="#eef3fb" stroke="var(--hairline-strong)"/>
+          </svg>
+        </div>
+        <div class="door-body">
+          <span class="app-kicker">1 out · 1 under wraps</span>
+          <h3>Games</h3>
+          <p>Something to pick up for two minutes and put down without owing anybody anything. Tilt Ball is the first.</p>
+          <span class="door-more">
+            See the games
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg>
+          </span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="section is-alt" id="next">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Next up</span>
+      <h2>Three more with the lights off</h2>
+      <p>
+        Built in evenings and weekends, one at a time, and named only when they are
+        close enough to keep the promise. Here is everything I am willing to say.
+      </p>
+    </div>
+
+    <div class="teasers reveal">
+      <div class="teaser">
+        <span class="teaser-tag">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          Nearly there
+        </span>
+        <div class="redacted" aria-label="Name withheld"><i style="width:58px"></i><i style="width:34px"></i><i style="width:76px"></i></div>
+        <p>Far enough along that it has a name. Not far enough along that I will say it.</p>
+      </div>
+
+      <div class="teaser">
+        <span class="teaser-tag">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          In the workshop
+        </span>
+        <div class="redacted" aria-label="Name withheld"><i style="width:42px"></i><i style="width:88px"></i><i style="width:30px"></i></div>
+        <p>A second game. Whatever you just guessed, it is not that.</p>
+      </div>
+
+      <div class="teaser">
+        <span class="teaser-tag">
+          <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+          Still a sketch
+        </span>
+        <div class="redacted" aria-label="Name withheld"><i style="width:70px"></i><i style="width:26px"></i><i style="width:52px"></i></div>
+        <p>Paper, pencil and one stubborn idea. Ask me again in a while.</p>
+      </div>
+
+    </div>
+
+    <p style="margin-top:26px;color:var(--ink-faint);font-size:15px">
+      Want to know first? <a href="mailto:pranavabipranav@gmail.com?subject=Tell%20me%20when%20the%20next%20one%20lands">Mail me</a> and I will tell you the day it lands.
+    </p>
+  </div>
+</section>
+
+<!-- ───────────────────────── About ───────────────────────── -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">About</span>
+      <h2>Why "neighbour"</h2>
+      <p>
+        Because that is the scale of it. Not a startup, not a platform — one developer
+        on your street, building the small thing you would have otherwise asked a
+        neighbour about. Apps that are native on the phone, quiet about your data, and
+        finished enough to actually use.
+      </p>
+    </div>
+
+    <div class="section-head reveal" style="margin-bottom:24px">
+      <span class="eyebrow">About me</span>
+      <h2 style="font-size:clamp(23px,3vw,29px);margin-top:14px">The developer next door</h2>
+    </div>
+
+    <div class="bio reveal">
+      <div class="bio-mark" aria-hidden="true">PRA</div>
+      <div>
+        <h3>P R Abinayaa</h3>
+        <p class="role">Homemaker · self-taught developer · NeighbourDev</p>
+        <p class="bio-copy">
+          I run a home, and in the hours around it I build apps. No company behind me and
+          no team to hand things to — just a long habit of noticing the small problems
+          that quietly eat a day, and enough stubbornness to learn Swift and Kotlin well
+          enough to fix them.
+        </p>
+        <p class="bio-copy">
+          Working this way is also why nothing here asks you to make an account or
+          trusts a server with your records. I am the only support desk, so the apps have to be the kind
+          I can stand behind.
+        </p>
+        <a class="bio-sign" href="#contact">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+          Write to me directly
+        </a>
+      </div>
+    </div>
+
+    <div class="section-head reveal" style="margin-bottom:32px">
+      <h2 style="font-size:clamp(24px,3vw,30px)">How I build them</h2>
+    </div>
+
+    <div class="grid-3 reveal">
+      <div class="tile">
+        <span class="ico"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+        <h3>Your data stays yours</h3>
+        <p>No account to create, nothing synced to a server of mine. What you record stays on your device, and you can export it as a file you keep.</p>
+      </div>
+      <div class="tile">
+        <span class="ico"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M5 12.5 10 17.5 19 7"/></svg></span>
+        <h3>Works with no signal</h3>
+        <p>Everything runs on the phone. A basement site visit, a flight, a village with one bar — the app behaves exactly the same.</p>
+      </div>
+      <div class="tile">
+        <span class="ico"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18.5h2"/></svg></span>
+        <h3>Native on both phones</h3>
+        <p>I write each one twice — SwiftUI on iPhone, Kotlin on Android — so it feels like it belongs on the phone instead of a website in a box.</p>
+      </div>
+      <div class="tile">
+        <span class="ico"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M17 5.5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+        <h3>Simple pricing</h3>
+        <p>Free to use with a small ad. One optional subscription removes the ads for good — no tiers, no upsell walls in the middle of your work.</p>
+      </div>
+      <div class="tile">
+        <span class="ico"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+        <h3>You reach me, not a desk</h3>
+        <p>Mail goes to my own inbox and I answer it myself. Requests from people actually using the app are how the next version gets written.</p>
+      </div>
+      <div class="tile">
+        <span class="ico"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 7v6c0 5 3.4 7.7 8 8.9 4.6-1.2 8-3.9 8-8.9V7z"/><path d="M9.5 12.2 11.4 14l3.6-3.8"/></svg></span>
+        <h3>Finished, then shipped</h3>
+        <p>Nothing goes out as an early-access placeholder. Each app is finished and tested before it ships, and updates add to it rather than patch it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section is-alt" id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <div>
+        <h2>Got an idea for the street?</h2>
+        <p>
+          Bugs, feature requests, or the everyday problem you keep solving by hand —
+          send it over. Every mail is read by the person who writes the code.
+        </p>
+      </div>
+      <div class="hero-cta" style="margin-top:0">
+        <a class="btn btn-primary" href="mailto:pranavabipranav@gmail.com">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
+          pranavabipranav@gmail.com
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="index.html" style="margin-bottom:10px">
+        <svg viewBox="0 0 64 64" width="24" height="24" aria-hidden="true">
+        <rect width="64" height="64" rx="15" fill="#1f7a63"/>
+        <path d="M20 31 12 38v14h13V41h6v11h13V38l-8-7z" fill="#ffffff" fill-opacity=".92"/>
+        <path d="M44 26 33 16 22 26" fill="none" stroke="#ffd79a" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+        <span class="wordmark" style="font-size:17px">Neighbour<b>Dev</b></span>
+      </a>
+      <div>© <span id="year">2026</span> NeighbourDev — apps by P R Abinayaa, one at a time.</div>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="apps.html">Apps</a>
+      <a href="games.html">Games</a>
+      <a href="index.html#next">Next up</a>
+      <a href="index.html#about">About</a>
+      <a href="mailto:pranavabipranav@gmail.com">Contact</a>
+      <a href="https://apps.apple.com/us/app/dream-villa-house-manager/id6763935516">Dream Villa on the App Store</a>
+      <a href="https://apps.apple.com/us/app/tilt-ball-maze-labyrinth/id6814348135">Tilt Ball on the App Store</a>
+      <a href="https://abinayaapr.github.io/TiltBall/privacy.html">Tilt Ball privacy</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+
+    /* Theme toggle — remembers the choice per browser, silently if storage is blocked. */
+    var toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme')
+        ? root.getAttribute('data-theme') === 'dark'
+        : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var next = dark ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('nd-theme', next); } catch (e) {}
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* Sections fade in once. Reduced motion skips it (the CSS keeps them visible). */
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var items = document.querySelectorAll('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      items.forEach(function (el) { el.classList.add('in'); });
+    } else {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, { rootMargin: '0px 0px -12% 0px' });
+      items.forEach(function (el) { io.observe(el); });
+    }
+  })();
+</script>
+
+</body>
+</html>
